@@ -1,0 +1,163 @@
+/* Header Styles - Mobile First */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.resumeButton {
+  display: none;
+  background: #3B82F6;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background .25s ease;
+}
+
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 3rem;
+}
+
+.desktopNav a {
+  position: relative;
+  color: #d6d6d6;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 8px;
+  width: 26px;
+  height: 2px;
+  background: white;
+  transition: all .3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  top: 12px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 28px;
+}
+
+.desktopNav a:hover {
+  color: #ffffff;
+}
+
+/* Animated X */
+
+.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+/* Mobile Panel */
+
+.mobileMenu {
+  overflow: hidden;
+  max-height: 0;
+  transition:
+    max-height .4s ease,
+    opacity .3s ease;
+  opacity: 0;
+  background: rgba(8, 10, 25, .97);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.mobileMenuOpen {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Mobile Navigation */
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.mobileNav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+  transition: color .25s;
+}
+
+.mobileNav a:hover {
+  color: #3B82F6;
+}
+
+/* Mobile Resume Button */
+
+.mobileResume {
+  margin-top: 2rem;
+  text-align: center;
+  background: #3B82F6;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Desktop Styles */
+
+@media (min-width: 901px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  .desktopNav, .resumeButton {
+    display: flex;
+  }
+
+  .resumeButton {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}

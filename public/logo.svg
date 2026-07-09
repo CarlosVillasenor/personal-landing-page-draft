@@ -1,0 +1,47 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 220 160"
+    width="220"
+    height="160">
+
+    <!-- Left Bracket -->
+    <path
+        d="M70 30
+          H45
+          Q30 30 30 45
+          V115
+          Q30 130 45 130
+          H70"
+        fill="none"
+        stroke="#3D6BFF"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- Right Bracket -->
+    <path
+        d="M150 30
+          H175
+          Q190 30 190 45
+          V115
+          Q190 130 175 130
+          H150"
+        fill="none"
+        stroke="#3D6BFF"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- Text -->
+    <text
+        x="110"
+        y="103"
+        text-anchor="middle"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-size="70"
+        font-weight="700"
+        fill="#FFFFFF">
+        CV
+    </text>
+
+</svg>
