@@ -1,11 +1,13 @@
+/* - Base & Mobile - */
+
 .aboutSection {
-	padding: 0 16px 56px;
+	padding: 0 1rem 3.5rem;
 	background: #070b16;
 }
 
 .panel {
 	position: relative;
-	max-width: 1280px;
+	max-width: 80rem;
 	margin: 0 auto;
 	border: 1px solid rgba(59, 101, 255, 0.18);
 	border-radius: 22px;
@@ -20,15 +22,15 @@
 }
 
 .aboutCopy {
-	padding: 28px 24px;
+	padding: 1.75rem 1.5rem;
 }
 
 .title {
 	display: inline-flex;
 	align-items: center;
 	gap: 12px;
-	margin-bottom: 18px;
-	font-size: 34px;
+	margin-bottom: 1.125rem;
+	font-size: 2.125rem;
 	font-weight: 700;
 	color: #f8faff;
 	line-height: 1.15;
@@ -39,8 +41,8 @@
 }
 
 .description {
-	max-width: 620px;
-	font-size: 22px;
+	max-width: 38.75rem;
+	font-size: 1.375rem;
 	line-height: 1.65;
 	color: rgba(221, 231, 255, 0.8);
 }
@@ -57,8 +59,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 12px;
-	min-height: 170px;
-	padding: 28px 18px;
+	min-height: 10.625rem;
+	padding: 1.75rem 1.125rem;
 	text-align: center;
 	color: #f6f8ff;
 }
@@ -76,34 +78,36 @@
 }
 
 .statValue {
-	font-size: 56px;
+	font-size: 1.25rem;
 	line-height: 1;
 	font-weight: 700;
 	letter-spacing: -0.02em;
 }
 
 .statLabel {
-	font-size: 32px;
+	font-size: 1.5rem;
 	line-height: 1.35;
 	color: rgba(225, 233, 255, 0.84);
-	max-width: 210px;
+	max-width: 13.125rem;
 }
 
-@media (min-width: 768px) {
+/* - Tablet - */
+
+@media (min-width: 48rem) {
 	.aboutSection {
-		padding: 0 24px 72px;
+		padding: 0 1.5rem 4.5rem;
 	}
 
 	.aboutCopy {
-		padding: 34px 34px;
+		padding: 2.125rem 2.125rem;
 	}
 
 	.title {
-		font-size: 40px;
+		font-size: 2.5rem;
 	}
 
 	.description {
-		font-size: 24px;
+		font-size: 1.5rem;
 	}
 
 	.stats {
@@ -112,7 +116,7 @@
 	}
 
 	.statItem {
-		min-height: 244px;
+		min-height: 15.25rem;
 		border-bottom: 0;
 		border-right: 1px solid rgba(57, 91, 186, 0.34);
 	}
@@ -122,23 +126,25 @@
 	}
 }
 
-@media (min-width: 1280px) {
+/* - Desktop - */
+
+@media (min-width: 80rem) {
 	.panel {
 		display: grid;
-		grid-template-columns: minmax(420px, 1.15fr) minmax(720px, 1fr);
+		grid-template-columns: minmax(26.25rem, 1.15fr) minmax(45rem, 1fr);
 	}
 
 	.aboutCopy {
-		padding: 58px 56px;
+		padding: 3.625rem 3.5rem;
 	}
 
 	.title {
-		font-size: 44px;
+		font-size: 2.75rem;
 	}
 
 	.description {
-		font-size: 38px;
-		max-width: 720px;
+		font-size: 2.375rem;
+		max-width: 45rem;
 	}
 
 	.stats {
@@ -147,11 +153,11 @@
 
 	.statItem {
 		min-height: auto;
-		padding: 54px 24px;
+		padding: 3.375rem 1.5rem;
 	}
 
 	.statLabel {
-		font-size: 38px;
-		max-width: 230px;
+		font-size: 2.375rem;
+		max-width: 14.375rem;
 	}
 }

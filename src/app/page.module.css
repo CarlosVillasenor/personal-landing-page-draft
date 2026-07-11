@@ -10,9 +10,9 @@
   --button-secondary-border: #ebebeb;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 37.5625rem) {
   .main {
-    padding: 120px 60px;
+    padding: 7.5rem 3.75rem;
   }
 
   .intro {
@@ -20,8 +20,8 @@
   }
 
   .intro h1 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     letter-spacing: -2.4px;
   }
 }

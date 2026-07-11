@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -37,8 +37,8 @@
 
 .hamburger {
   display: block;
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -47,23 +47,23 @@
 
 .hamburger span {
   position: absolute;
-  left: 8px;
-  width: 26px;
-  height: 2px;
+  left: 0.5rem;
+  width: 1.625rem;
+  height: 0.125rem;
   background: white;
   transition: all .3s ease;
 }
 
 .hamburger span:nth-child(1) {
-  top: 12px;
+  top: 0.75rem;
 }
 
 .hamburger span:nth-child(2) {
-  top: 20px;
+  top: 1.25rem;
 }
 
 .hamburger span:nth-child(3) {
-  top: 28px;
+  top: 1.75rem;
 }
 
 .desktopNav a:hover {
@@ -74,7 +74,7 @@
 
 .active span:nth-child(1) {
   transform: rotate(45deg);
-  top: 20px;
+  top: 1.25rem;
 }
 
 .active span:nth-child(2) {
@@ -83,14 +83,14 @@
 
 .active span:nth-child(3) {
   transform: rotate(-45deg);
-  top: 20px;
+  top: 1.25rem;
 }
 
 /* - Mobile Panel - */
 
 .mobileMenu {
   overflow: hidden;
-  max-height: 0;
+  max-height: 0rem;
   transition:
     max-height .4s ease,
     opacity .3s ease;
@@ -101,7 +101,7 @@
 }
 
 .mobileMenuOpen {
-  max-height: 500px;
+  max-height: 31.25rem;
   opacity: 1;
 }
 
@@ -146,7 +146,7 @@
 
 /* - Tablet Styles - */
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .container {
     padding: 0rem 1rem;
   }
@@ -176,7 +176,7 @@
 
 /* - Desktop Styles - */
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .container {
     padding: 0rem 2rem;
   }
