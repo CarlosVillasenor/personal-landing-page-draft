@@ -4,7 +4,7 @@ import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className="page">
       <Jumbotron />
       <About />
     </div>

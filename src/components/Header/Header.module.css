@@ -1,5 +1,17 @@
 /* - Base (Mobile First) - */
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background: var(--color-background);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--color-divider);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -11,8 +23,8 @@
 
 .resumeButton {
   display: none;
-  background: #3B82F6;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-text);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: background .25s ease;
@@ -26,7 +38,7 @@
 
 .desktopNav a {
   position: relative;
-  color: #d6d6d6;
+  color: var(--color-text-secondary);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -50,7 +62,7 @@
   left: 0.5rem;
   width: 1.625rem;
   height: 0.125rem;
-  background: white;
+  background: var(--color-text);
   transition: all .3s ease;
 }
 
@@ -67,7 +79,7 @@
 }
 
 .desktopNav a:hover {
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 /* - Animated X - */
@@ -97,7 +109,7 @@
   opacity: 0;
   background: rgba(8, 10, 25, .97);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255,255,255,.05);
+  border-bottom: 1px solid var(--color-divider);
 }
 
 .mobileMenuOpen {
@@ -114,16 +126,16 @@
 }
 
 .mobileNav a {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   font-size: 1.1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(255,255,255,.05);
+  border-bottom: 1px solid var(--color-divider);
   transition: color .25s;
 }
 
 .mobileNav a:hover {
-  color: #3B82F6;
+  color: var(--color-primary);
 }
 
 /* - Mobile Resume Button - */
@@ -131,7 +143,8 @@
 .mobileResume {
   margin-top: 2rem;
   text-align: center;
-  background: #3B82F6;
+  background: var(--color-primary);
+  color: var(--color-text);
   padding: 1rem;
   border-radius: 12px;
   font-weight: 600;

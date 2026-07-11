@@ -46,7 +46,7 @@ export default function About() {
 				<div className={styles.stats}>
 					{stats.map(({ icon: Icon, value, label }) => (
 						<div key={label} className={styles.statItem}>
-							<Icon size={24} className={styles.statIcon} aria-hidden="true" />
+							<Icon className={styles.statIcon} aria-hidden="true" />
 							<p className={styles.statValue}>{value}</p>
 							<p className={styles.statLabel}>{label}</p>
 						</div>
