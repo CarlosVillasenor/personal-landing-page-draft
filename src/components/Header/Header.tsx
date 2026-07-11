@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Logo from "@public/logo.svg";
+import { Download } from 'lucide-react';
 
 const navItems = [
   { href: "#about", label: "About" },
@@ -26,7 +27,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <Image src={Logo} alt="Logo" width={42} height={42} />
+          <Image src={Logo} alt="CV" width={60} height={60} />
         </Link>
 
         <nav className={styles.desktopNav}>
@@ -37,12 +38,9 @@ export default function Header() {
           ))}
         </nav>
 
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          className={styles.resumeButton}
-        >
+        <a href="/resume.pdf" target="_blank" className={styles.resumeButton} >
           Resume
+          <Download className={styles.downloadIcon} />
         </a>
 
         <button 
@@ -72,12 +70,9 @@ export default function Header() {
             </Link>
           ))}
 
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            className={styles.mobileResume}
-          >
+          <a href="/resume.pdf" target="_blank" className={styles.mobileResume} >
             Download Resume
+            <Download className={styles.downloadIcon} />
           </a>
         </nav>
       </div>

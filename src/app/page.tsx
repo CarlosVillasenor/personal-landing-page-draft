@@ -1,10 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Jumbotron from "@/components/Jumbotron/Jumbotron";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <h1>Hello Mom</h1>
+      <Jumbotron />
+      <About />
     </div>
   );
 }
