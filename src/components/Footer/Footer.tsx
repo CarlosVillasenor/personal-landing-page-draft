@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUp, Heart, Mail } from "lucide-react";
 import styles from "./Footer.module.css";
+import Button from "../Button/Button";
 
 export default function Footer() {
 	return (
@@ -17,10 +18,14 @@ export default function Footer() {
 						
 					</div>
 
-					<Link href="mailto:hello@carlos.dev" className={styles.ctaButton}>
+					{/* <Link href="mailto:hello@carlos.dev" className={styles.ctaButton}>
 						<span>Get In Touch</span>
 						<ArrowRight className={styles.buttonIcon} />
-					</Link>
+					</Link> */}
+					<Button>
+						Get In Touch
+						<ArrowRight className="buttonIcon" />
+					</Button>
 				</section>
 
 				<div className={styles.bottomRow}>

@@ -12,7 +12,7 @@ export default function Button({ children, onClick, type = 'button', className =
     <button
       type={type}
       onClick={onClick}
-      className={`${className} ${styles.button}`}
+      className={`${className} ${styles.btnPrimary}`}
       {...props}
     >
       {children}
