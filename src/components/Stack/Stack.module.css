@@ -133,7 +133,7 @@
   .items {
     grid-template-columns: unset;
     display: flex;
-    gap: 1rem 0.75rem;
+    gap: 1rem 1rem;
   }
 
   .group+.group {
@@ -142,9 +142,5 @@
 
   .groupTitle {
     margin-bottom: 1rem;
-  }
-
-  .itemLabel {
-    font-size: 0.81rem;
   }
 }

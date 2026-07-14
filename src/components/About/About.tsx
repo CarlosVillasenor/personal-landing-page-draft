@@ -35,7 +35,7 @@ export default function About() {
 					</h2>
 
 					<p className={styles.description}>
-						I&apos;m a Senior Frontend Developer with more than 7 years of experience
+						I'm a Senior Frontend Developer with more than 7 years of experience
 						building web applications. My expertise is centered around React,
 						TypeScript and frontend architecture. I enjoy improving performance,
 						creating reusable components and delivering outstanding user

@@ -8,7 +8,7 @@ export default function Jumbotron() {
     <section className={styles.jumbotron} id="home">
       {/* Left side */}
       <div className={styles.content}>
-        <p className={styles.greeting}>Hi, I&apos;m 👋</p>
+        <p className={styles.greeting}>Hi, I'm 👋</p>
         <h1 className={styles.name}>Carlos Villaseñor</h1>
         <p className={styles.role}>Senior Frontend Developer</p>
         <p className={styles.bio}>
