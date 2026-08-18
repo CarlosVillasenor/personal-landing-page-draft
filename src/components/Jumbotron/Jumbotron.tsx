@@ -10,7 +10,7 @@ export default function Jumbotron() {
       <div className={styles.content}>
         <p className={styles.greeting}>Hi, I'm 👋</p>
         <h1 className={styles.name}>Carlos Villaseñor</h1>
-        <p className={styles.role}>Senior Frontend Developer</p>
+        <p className={styles.role}>Software Engineer - Frontend</p>
         <p className={styles.bio}>
           I build fast, scalable and accessible web experiences with React and
           modern technologies. I love solving complex problems and turning ideas

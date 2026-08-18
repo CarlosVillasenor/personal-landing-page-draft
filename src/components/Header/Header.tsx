@@ -37,7 +37,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <a href="/resume.pdf" target="_blank" className={styles.resumeButton} >
+        <a href="https://drive.google.com/file/d/19GdgVSOtf9Alwa8JqhC7FEyuxbbkPRzu/view" target="_blank" className={styles.resumeButton} >
           Resume
           <Download className={styles.downloadIcon} />
         </a>
